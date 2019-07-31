@@ -1,0 +1,731 @@
+html,body{
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    overflow:hidden;
+}
+
+.background-image{
+    height: 827px;
+    background-image: url(images/portfolio4.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(12%);
+    width: 100%;
+}
+
+.image img{
+    margin-top:0%;
+    margin-left: 17%;
+ }
+
+ .logo img{
+    margin-top:10%;
+    margin-left:20%;
+ }
+
+ .logo2 img{
+    margin-top:-30%;
+    margin-left:65%;
+ }
+
+ .logo3 img{
+     margin-top:10%;
+     margin-left:39%;
+     margin-bottom:10%;
+ }
+
+ .label, input, textarea{
+     display: block;
+     margin-top:2%;
+     padding: 0.7% 0;
+     width:40%;
+ }
+ .indicator{
+     position: relative;
+     width: 50px;
+     height: 50px;
+     top:-200px;
+     left:48%;
+     transform: rotate(45deg);
+ }
+
+ .indicator span{
+     position: absolute;
+     top:0;
+     left:0;
+     width: 100%;
+     height: 100%;
+     display: block;
+     box-sizing: border-box;
+     border:none;
+     border-right: 3px solid #fff;
+     border-bottom: 3px solid #fff;
+     animation: animate 1s linear infinite;
+ }
+
+ .indicator span:nth-child(1){
+    top:15px;
+    left:15px;
+    animation-delay: 0s;
+}
+.indicator span:nth-child(2){
+    top:-15px;
+    left:-15px;
+    animation-delay: 0.2s;
+}
+.indicator span:nth-child(3){
+    top:30px;
+    left:30px;
+    animation-delay: 0.4s;
+}
+.indicator span:nth-child(4){
+    top:-0px;
+    left:-0px;
+    animation-delay: 0.8s;
+}
+
+.container{
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.container1{
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-bottom: 11%;
+}
+.wrapper{
+    height:100%;
+    padding-bottom:11.8%; 
+  /* margin-top: 600px;*/
+   /*margin-bottom:400px;*/
+}
+.wrapper2{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    /*margin-top:800px;*/
+}
+
+header nav li{
+    display: inline-block;
+    list-style-type:none;
+    margin:20px 20px;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+header nav li a{
+    float: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:grey;
+
+}
+
+header nav li:hover a{
+    color: orange;
+}
+.footer{
+    position: absolute;
+    left:44%;
+    bottom:-107%;
+    /*margin-top:38%;*/
+    color:lightskyblue;
+}
+.footer2{
+    position: absolute;
+    left:44%;
+    bottom:-213%;
+    margin-bottom:2%;
+    color:lightskyblue;
+}
+.footer3{
+    position: absolute;
+    left:44%;
+    bottom:-323.5%;
+    margin-bottom:2%;
+    color:lightskyblue;
+}
+.active{
+    color:orange;
+}
+
+.text1{
+    color:white;
+    font-weight:200;
+    font-size: 250%;
+    position: absolute;
+    top:23%;
+    left:31%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0%;
+    text-align: center;
+    padding-right: 100px; 
+    padding-left: 100px;
+}
+
+.text2{
+    color: #ff9900;
+    font-weight: 600;
+    font-size: 250%;
+    position: absolute;
+    top:35%;
+    left:22.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0%;
+    text-align: center;
+    padding-right: 100px; 
+    padding-left: 100px;
+}
+
+.text3{
+    color:white;
+    font-weight: 200;
+    font-size: 87.5%;
+    position: absolute;
+    top:50%;
+    left:26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:0%;
+    text-align: center;
+    padding-right: 100px; 
+    padding-left: 100px;
+    line-height: 2;
+}
+
+.text4{
+    position: absolute;
+    left:55%;
+    top:130%;
+    color:gray;
+    font-weight:50;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0%;
+    text-align: center;
+    padding-right: 100px; 
+    padding-left: 100px;
+}
+
+.text5{
+    position: absolute;
+    left:42%;
+    top:140%;
+    color:gray;
+    font-weight:50;
+    font-size: 15px;
+    text-align: center;
+    line-height: 2;
+}
+
+
+.text7{
+    position: absolute;
+    left:8%;
+    top:260%;
+    color:gray;
+    font-weight:50;
+    font-size: 20px;
+}
+.text8{
+    position: absolute;
+    left:52%;
+    top:260%;
+    color:gray;
+    font-weight:50;
+    font-size: 20px;
+}
+.text9{
+    position: absolute;
+    left:30%;
+    top:300%;
+    color:gray;
+    font-weight:50;
+    font-size: 20px;
+}
+
+.text10{
+    position: absolute;
+    left:45%;
+    top:335%;
+    color:gray;
+    font-weight:50;
+    font-size: 30px;
+}
+
+.alert {
+   text-align:center;
+   padding: 0%;
+   background: #79c879;
+   color:white;
+   display: none;
+   width: 38%;
+}
+
+@keyframes animate{
+    0%{
+       border-color: #ff9900;
+    }
+    20%{
+        border-color: #ff9900;
+    }
+    20.1%, 100%{
+        border-color:#222;
+    }
+}
+/*--------------MEDIA QUERIES----------------*/
+
+/*Big Screen of 1690px*/
+@media screen and (max-width:1690px){
+
+}
+
+/*Ipad Pro Screen of 1024px*/
+@media screen and (max-width:1024px){
+    .text1{
+        font-size:200%;
+        left:35%;
+        top:45%;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+    .text2{
+        font-size:200%;
+        left:25%;
+        top:50%;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+    .text3{
+        font-size:80%;
+        left:16.5%;
+        top:55%;
+    }
+
+    header nav li{
+        margin:0px 10px;
+        font-size:110%;
+    }
+    .background-image{
+        width: 1024px;
+        margin-bottom: 0px;
+        height: 1420px;
+    }
+    .image img{
+        margin-left: 43%;
+        margin-top: 120px;
+        margin-bottom: 700px;
+    }
+    .text4{
+        left:37%;
+        top:150%;
+        margin-bottom: 0px;
+    }
+    .text5{
+        font-size:85%;
+        left:18%;
+        top:155%;
+    }
+    .text7{
+        left:20%;
+        top:228%;
+        font-size: 20px;
+    }
+    .text8{
+        left:16.5%;
+        top:252%;
+        font-size: 20px;
+    }
+    .text9{
+        left:20%;
+        top:277%;
+        font-size: 20px;
+    }
+    .text10{
+        left:40%;
+        top:315%;
+    }
+    .footer{
+        left:42%;
+        bottom:-108%;
+    }
+    .footer2{
+        left:42%;
+        bottom:-209.4%;
+    }
+    .footer3{
+        left:42%;
+        bottom:-300%;
+    }
+    .logo img{
+        margin-top:10%;
+        margin-left:45%;
+     }
+     .logo2 img{
+        margin-top:20%;
+        margin-left:43.4%;
+     }
+     .logo3 img{
+        margin-top:20%;
+        margin-left:41.2%;
+        margin-bottom: 45%;
+     }
+     .label, input, textarea{
+        margin:12%;
+        margin-top:2%; 
+    }
+
+
+        
+}
+
+
+/*Ipad Screen of 768px*/
+@media screen and (max-width:768px){
+    .text1{
+        font-size:200%;
+        left:28%;
+        top:-25%;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+    .text2{
+        font-size:200%;
+        left:15%;
+        top:-18%;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+    .text3{
+        font-size:80%;
+        left:3%;
+        top: -10%;
+    }
+
+    header nav li{
+        margin:0px 10px;
+        font-size:90%;
+    }
+    .background-image{
+        width: 808px;
+    }
+    .image img{
+        margin-left: 43%;
+        margin-bottom: 0;
+    }
+    .text4{
+        left:32%;
+        top:65%;
+    }
+    .text5{
+        font-size:90%;
+        left:4%;
+        top:115%;
+        margin-bottom: 0;
+    }
+
+}
+
+/*Phone Screen of 414px*/
+@media screen and (max-width:414px){
+    .text1{
+        font-size:150%;
+        left:28%;
+        top:-25%;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+    .text2{
+        font-size:150%;
+        left:18%;
+        top:-18%;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+    .text3{
+        font-size:80%;
+        left:16%;
+        top: 2%;
+    }
+
+    header nav li{
+        margin:0px 8px;
+        font-size:80%;
+    }
+    .background-image{
+        height: 750px;
+        width: 450px;
+    }
+    .image img{
+        margin-left: 48%;
+        margin-bottom: 0;
+    }
+    .text4{
+        font-size: 150%;
+        left:20%;
+        top:88%;
+    }
+    .text5{
+        font-size:80%;
+        left:13%;
+        top:140%;
+        margin-bottom: 0;
+    }
+
+}
+
+/*Phone Screen of 411px*/
+@media screen and (max-width:411px){
+    .text1{
+        font-size:150%;
+        left:31%;
+        top:-25%;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+    .text2{
+        font-size:150%;
+        left:25%;
+        top:-18%;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+    .text3{
+        font-size:75%;
+        left:20%;
+        top: 5%;
+    }
+
+    header nav li{
+        margin:0px 6px;
+        font-size:80%;
+    }
+    .background-image{
+        height: 823px;
+        width: 500px;
+    }
+    .image img{
+        margin-left: 53%;
+        margin-bottom: 0;
+    }
+    .text4{
+        font-size: 132%;
+        left:27%;
+        top:60%;
+    }
+    .text5{
+        font-size:75%;
+        left:25%;
+        top:130%;
+        margin-bottom: 0;
+    }
+
+}
+
+/*Phone Screen of 411px*/
+@media screen and (max-width:411px){
+    .text1{
+        font-size:150%;
+        left:31%;
+        top:-25%;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+    .text2{
+        font-size:150%;
+        left:25%;
+        top:-18%;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+    .text3{
+        font-size:75%;
+        left:20%;
+        top: 5%;
+    }
+
+    header nav li{
+        margin:0px 6px;
+        font-size:80%;
+    }
+    .background-image{
+        height: 731px;
+        width: 500px;
+    }
+    .image img{
+        margin-left: 53%;
+        margin-bottom: 0;
+    }
+    .text4{
+        font-size: 132%;
+        left:27%;
+        top:80%;
+    }
+    .text5{
+        font-size:75%;
+        left:25%;
+        top:130%;
+        margin-bottom: 0;
+    }
+
+}
+
+/*Phone Screen of 375px*/
+@media screen and (max-width:375px){
+    .text1{
+        font-size:150%;
+        left:31%;
+        top:-25%;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+    .text2{
+        font-size:150%;
+        left:29.2%;
+        top:-17%;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+    .text3{
+        font-size:75%;
+        left:20%;
+        top: 15%;
+    }
+
+    header nav li{
+        margin:0px 6px;
+        font-size:80%;
+    }
+    .background-image{
+        height: 700px;
+        width: 500px;
+    }
+    .image img{
+        margin-left: 53%;
+        margin-bottom: 0;
+    }
+    .text4{
+        font-size: 132%;
+        left:22%;
+        top:87%;
+    }
+    .text5{
+        font-size:75%;
+        left:25%;
+        top:140%;
+        margin-bottom: 0;
+    }
+
+}
+
+/*Phone Screen of 375px*/
+@media screen and (max-width:360px){
+    .text1{
+        font-size:150%;
+        left:28%;
+        top:-25%;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+    .text2{
+        font-size:150%;
+        left:26%;
+        top:-12%;
+        padding-right: 0px; 
+        padding-left: 0px;
+        margin-right: 0px;
+    }
+    .text3{
+        font-size:75%;
+        left:19%;
+        top: 17%;
+    }
+
+    header nav li{
+        margin:0px 5px;
+        font-size:80%;
+    }
+    .background-image{
+        height: 700px;
+        width: 500px;
+    }
+    .image img{
+        margin-left: 53%;
+        margin-bottom: 0;
+    }
+    .text4{
+        font-size: 132%;
+        left:21.9%;
+        top:92%;
+    }
+    .text5{
+        font-size:75%;
+        left:25%;
+        top:144%;
+        margin-bottom: 0;
+    }
+
+}
+
+/*Phone Screen of 320px*/
+@media screen and (max-width:320px){
+    .text1{
+        font-size:100%;
+        left:45%;
+        top:-25%;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+    .text2{
+        font-size:100%;
+        left:43%;
+        top:-17%;
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+    .text3{
+        font-size:70%;
+        left:30%;
+        top: 15%;
+        line-height: 1.5;
+    }
+
+    header nav li{
+        margin:0px 1px;
+        font-size:80%;
+    }
+    .background-image{
+        height: 568px;
+        width: 500px;
+    }
+    .image img{
+        margin-left: 56%;
+        margin-bottom: 0;
+    }
+    .text4{
+        font-size: 110%;
+        left:30%;
+        top:87%;
+    }
+    .text5{
+        font-size:75%;
+        left:35%;
+        top:140%;
+        margin-bottom: 0;
+    }
+
+}

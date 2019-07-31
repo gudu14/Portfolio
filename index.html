@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <title>Portfolio</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<body>
+    
+    <section id="home">
+        <div class="background-image"></div>
+        <a href="#about">
+            <div class="indicator">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </a>
+          
+
+
+        <div class="text-container">
+            <div class="text1">I AM GUDU MNYAKENI</div>
+            <div class="text2">INSPIRING SOFTWARE DEVELOPER</div>
+            <div class="text3">I am Gudu Mnyakeni, from YounglingsSA with the passion of Mobile and Front End Developing.<br/>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</div>
+        </div>
+    </section>
+
+
+
+    <section id="about">
+
+            <header>
+                    <div class="container">
+                        <center>
+                            <nav>
+                                <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a class="active" href="#about">About</a></li>
+                                    <li><a href="#skills">Skills</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                    </center>
+                    </div>
+            </header> 
+        
+       <div class="wrapper">
+            <div class="image">
+                    <img src="images/images.png" width="20%" height="30%">
+            </div>
+            
+            <div class="text-container">
+                <div class="text4">Who Am I</div>
+                <div class="text5">
+                    <p>Gudu Mnyakeni is an inspiring software Developer who lives in Cape Town.<br/>If he is not working or
+                            studying, you will catch him watching series and learning new things.<br/>He would love to travel
+                            explore other countries, learn about other cultures and not forgetting to indulge on their
+                            dishies.<br/>While travelling he would also expand his knowledge in Mobile and Front End Developing
+                            of which is his career path.<br/>
+                    </p>
+                </div>
+            </div>
+            <div class="footer">
+                <small>&copy; Copyright 2019, Gudu Mnyakeni</small>
+            </div>
+       </div>
+      
+    </section>
+
+  
+
+    <section id="skills">
+            <header>
+                    <div class="container">
+                        <center>
+                            <nav>
+                                <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a class="active" href="#skills">Skills</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                    </center>
+                    </div>
+            </header> 
+
+        <div class="wrapper2">
+                <div class="text7">
+                    Hypertext Markup Language, Language for electronic documents
+                </div>
+                <div class="text8">
+                    Cascading Style Sheets Language, Language for Webpages presentation 
+                </div>
+                <div class="text9">
+                    JavaScript Language, Object orientated programming Language 
+                </div>
+                <div class="logo">
+                    <img src="images/logo.png" width="10%" height="10%">
+                </div>
+                <div class="logo2">
+                    <img src="images/logo2.png" width="13%" height="13%">
+                </div>
+                <div class="logo3">
+                    <img src="images/logo3.png" width="18.5%" height="18.5%">
+                </div>                
+                <div class="footer2">
+                    <small>&copy; Copyright 2019, Gudu Mnyakeni</small>
+                </div>
+        </div>
+       
+    </section>
+
+
+    <section id="contact">
+        <header>
+                <div class="container1">
+                    <center>
+                        <nav>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a class="active" href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                </center>
+                </div>
+        </header> 
+
+            <center>
+                <div class="text10">
+                    CONTACT ME 
+                </div>
+                
+                <div class="alert">
+                    Your message has been sent
+                </div>
+
+                <div class="contact">
+                    <form id="Contactform">
+                        <label>Name:</label>
+                        <input type="text" size="20" name="name" id="name" required><br/>
+                        
+                        <label>E-mail:</label>
+                        <input type="email" size="40" maxlength="50" name="email" id="email" required><br/>
+                            
+                        <label>Message:</label>
+                        <textarea name="message" id="message"></textarea>
+                        <div class="g-recaptcha" data-sitekey="6LcaPrAUAAAAABDHGArOqVZ4Ig93A0kTfRdN1-w8" data-callback="recaptcha_callback"></div>
+                        <button type="submit" id="submit" disabled>
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </center>
+        <div class="wrapper">   
+            <div class="footer3">
+                <small>&copy; Copyright 2019, Gudu Mnyakeni</small>
+            </div>
+        </div>
+   
+    </section>
+    
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
+    <script src="main.js"></script>
+    <script>
+        function recaptcha_callback(){
+            var submitbutton = document.querySelector('#submit');
+            submitbutton.removeAttribute('disabled');
+            submitbutton.style.cursor='pointer';
+        }
+    </script>
+</body>
+</html
